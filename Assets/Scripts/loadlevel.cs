@@ -2,25 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class loadlevel : MonoBehaviour
 {
    
-
+private float hp=Settings.HP;
 public int iLevelToLoad;
 public string sLevelToLoad;
 
-public bool useIntegerToLoadLevel=false;
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+public bool useIntegerToLoadLevel=false;
+    
 
     private void  OnCollisionEnter2D(Collision2D collision)
      {

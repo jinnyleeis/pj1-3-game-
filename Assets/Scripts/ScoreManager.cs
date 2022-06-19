@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ScoreManager :MonoBehaviour
 {
@@ -16,14 +17,7 @@ void Update() {
   // score+=Settings.COIN_SCORE;
   // hp +=Settings.POTION_SCORE;
   // hp -=Settings.TRAP_SCORE;
-   
-    if (Input.GetKeyDown(KeyCode.Alpha2)) 
-        {
-            Debug.Log("score"+score);
-            Debug.Log("hp"+hp);
-
-        }
-}
+   }
 
     //외부 호출용임
     

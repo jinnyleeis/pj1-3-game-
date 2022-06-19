@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class Bullet : MonoBehaviour
+
+public class Aconite : MonoBehaviour
 {
 
    public float speed = 10;
    public GameObject expresource;
    public AudioClip sndClip;
+  
     // Start is called before the first frame update
 
     void Awake() 
@@ -39,6 +41,7 @@ public class Bullet : MonoBehaviour
        // exp.transform.localScale=new Vector3(0.3f,0.3f,0.3f);
        // exp.transform.position=transform.position;
        GameObject exp=Instantiate(expresource,transform.position,transform.rotation) as GameObject;
+       
 
         Destroy(exp,0.5f);
     }

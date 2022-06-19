@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 
 public class PlayerGraphic_ : MonoBehaviour
 {
@@ -12,9 +14,11 @@ public class PlayerGraphic_ : MonoBehaviour
     Animator animator;
     SpriteRenderer spriteRenderer;
     public GameObject Bullet;
+    public GameObject Aconite;
     Transform gunPoint;
     private float hp=Settings.HP;
     bool isDead=false;
+    public Text Timer;
     
 
     // Start is called before the first frame update
@@ -61,12 +65,17 @@ public class PlayerGraphic_ : MonoBehaviour
             animator.SetBool("Moving", false);
         else
             animator.SetBool("Moving", true);
+
+        SetHP();
+
+        
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
         //Move By Keycontrol
+
         float h = Input.GetAxisRaw("Horizontal");
         rigid.AddForce(Vector2.right * h, ForceMode2D.Impulse);
 
@@ -78,6 +87,19 @@ public class PlayerGraphic_ : MonoBehaviour
         {
             rigid.velocity = new Vector2(maxSpeed * (-1), rigid.velocity.y);
         }
+
+        if (Input.GetKeyDown(KeyCode.Alpha1)) 
+        {
+            FireGun();
+
+        }
+
+         if (Input.GetKeyDown(KeyCode.Alpha2)) 
+        {
+            AconiteFUNC();
+
+        }
+
 
         //Landing Platform
         Debug.DrawRay(rigid.position, Vector3.down, new Color(0, 1, 0));
@@ -93,14 +115,10 @@ public class PlayerGraphic_ : MonoBehaviour
                     animator.SetBool("Jumping", false);
             }
         }
-        if (Input.GetKeyDown(KeyCode.Alpha1)) 
-        {
-            FireGun();
-
-        }
+        
 
       if(isDead) return;
-      SetHP();
+      
 
       //SetAnimation();  
     }
@@ -111,7 +129,8 @@ public class PlayerGraphic_ : MonoBehaviour
         players= GameObject.FindGameObjectsWithTag("Player");
         if(players.Length>1)
         {
-            Destroy(players[0]);
+           Debug.Log("players added");
+            Destroy(players[1]);
         }
     }
 
@@ -122,7 +141,19 @@ public class PlayerGraphic_ : MonoBehaviour
 
 
      
-    
+    void AconiteFUNC()
+     {
+
+
+        Debug.Log("Aconite");
+         Quaternion rotation = transform.rotation;
+         //if(transform.localScale.x<0){
+          
+        // }
+
+         Instantiate(Aconite,gunPoint.position,gunPoint.rotation);
+         
+     }
 
 
 
@@ -152,11 +183,17 @@ public class PlayerGraphic_ : MonoBehaviour
      {
          //hp-=Settings.HP_DEC;
          //ScoreManager.hp=hp;
-
-         if(hp<0)
+         if (isDead==false){
+            if(hp<0 || Timer.text=="0")
          {
-             isDead=true;
+            
+            SceneManager.LoadScene("loose stage");
+            isDead=true;
+
+        
          }
+         
+     }
      }
 
      void SetDamage(float damage)

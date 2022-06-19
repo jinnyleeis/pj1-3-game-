@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Coin : MonoBehaviour
+public class portion : MonoBehaviour
 {
 
      //public GameObject coinscoreresource;
@@ -34,7 +37,7 @@ public class Coin : MonoBehaviour
         //GameObject coinscore = Instantiate(coinscoreresource,transform.position,transform.rotation) as GameObject;
 
         //coinscore.SendMessage("SetScore",Settings.COIN_SCORE);
-        ScoreManager.AddCoin();
+        ScoreManager.AddPotion();
 
         //coin sound 
         AudioClip coinsound=Instantiate(coinsoundresource) as AudioClip;
