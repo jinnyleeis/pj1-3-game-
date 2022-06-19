@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - StartPos
+  - Bullet
+  - Enemy
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Player
+  - 
+  - Platform
+  - "Platform Background_\uC2E0\uB4F1\uC131\uC774"
+  - Platform Background
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: default2
+    uniqueID: 3747006681
+    locked: 0
+  - name: default3
+    uniqueID: 2074382971
+    locked: 0
+  - name: "\uC717\uBC30\uACBD"
+    uniqueID: 3577227533
+    locked: 0
+  - name: "\uC717\uBC30\uACBD2"
+    uniqueID: 3014355265
+    locked: 0
+  - name: tilemap
+    uniqueID: 336589909
+    locked: 0
+  - name: "\uD50C\uB808\uC774\uC5B4\uB4E4"
+    uniqueID: 2231346329
+    locked: 0
