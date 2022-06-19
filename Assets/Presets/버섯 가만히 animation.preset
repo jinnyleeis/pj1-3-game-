@@ -22,13 +22,8 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_Transitions.Array.size
-    value: 1
+    value: 0
     objectReference: {fileID: 0}
-  - target: {fileID: 0}
-    propertyPath: m_Transitions.Array.data[0]
-    value: 
-    objectReference: {fileID: 7577916153460709588, guid: 867bfa2d012cbc842987276fda56ee77,
-      type: 2}
   - target: {fileID: 0}
     propertyPath: m_StateMachineBehaviours.Array.size
     value: 0
@@ -97,3 +92,4 @@ Preset:
     propertyPath: m_TimeParameter
     value: 
     objectReference: {fileID: 0}
+  m_ExcludedProperties: []
