@@ -1,7 +1,8 @@
 # pj1-3-game-
 
-재생 영상입니다! - 총 5개의 씬을 만들었습니다
+
 https://github.com/jinnyleeis/pj1-3-game-/tree/main/Assets/player%20video%20게임%20실패시%20승리시
+위에는 재생 영상링크입니다! - 총 5개의 씬을 만들었습니다
 
 <stage 0>
 ![image](https://user-images.githubusercontent.com/101055312/174493997-5b05007a-a79c-49f0-b1b6-6ca830270282.png)
