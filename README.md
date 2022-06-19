@@ -13,11 +13,13 @@ https://github.com/jinnyleeis/pj1-3-game-/tree/main/Assets/player%20video%20게�
 <boss stage>
   ![image](https://user-images.githubusercontent.com/101055312/174494142-8c2ce068-00b3-4e76-ad5f-80b37aa57340.png)
   
- <game loose> - 평생 목각인형이 되어 마녀에게 잡아먹힘
+ <game loose> 
+   평생 목각인형이 되어 마녀에게 잡아먹힘
  ![image](https://user-images.githubusercontent.com/101055312/174494119-42efd28d-ff36-4770-949a-511e83ed24fb.png)
    
    
- <game win> - 게임 이겼을 시, 구출해온 동물들과 같이 돌아감
+ <game win> 
+   게임 이겼을 시, 구출해온 동물들과 같이 돌아감
    ![image](https://user-images.githubusercontent.com/101055312/174494168-215c3aaf-5269-4eba-a2f9-a4ddc7daa8aa.png)
 
 
