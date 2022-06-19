@@ -11,7 +11,7 @@ https://github.com/jinnyleeis/pj1-3-game-/tree/main/Assets/player%20video%20게�
 ![image](https://user-images.githubusercontent.com/101055312/174494090-aeb00861-69f0-487c-a6d4-f8de3eee03e8.png)
 
 <boss stage>
-  ![imag<img width="748" alt="무제 5" src="https://user-images.githubusercontent.com/101055312/174494271-c893c29a-6b41-490a-ac99-b604de90ee41.png">
+  <img width="748" alt="무제 5" src="https://user-images.githubusercontent.com/101055312/174494271-c893c29a-6b41-490a-ac99-b604de90ee41.png">
 
   
 <game loose> 
